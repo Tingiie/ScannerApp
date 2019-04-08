@@ -75,7 +75,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
             }
         } else if (zValue < 0 && zValue > -9.8){
                 if (xValue < -1) {
-                    posView.setText("Vänster");
+                    posView.setText("Left");
                 } else if (xValue > 1){
                     posView.setText("Right");
                 } else if (yValue > 1){
