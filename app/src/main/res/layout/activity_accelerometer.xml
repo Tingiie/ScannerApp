@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AccelerometerActivity">
+
+    <TextView
+        android:id="@+id/accText"
+        android:layout_width="293dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="@string/acc_heading"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accValuesView"
+        android:layout_width="263dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accText" />
+
+    <TextView
+        android:id="@+id/accPosView"
+        android:layout_width="263dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accValuesView" />
+</android.support.constraint.ConstraintLayout>
